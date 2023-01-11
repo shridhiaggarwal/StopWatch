@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Shridhi">
+    <meta name="description" content="It is a Stop Watch project.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Stop Watch">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title tag -->
+    <title>Stop Watch</title>
+</head>
+
+<body>
+    <main class="stopWatch">
+        <p class="timer">
+            <span id="hours">00</span>
+            <span>:</span>
+            <span id="mins">00</span>
+            <span>:</span>
+            <span id="secs">00</span>
+            <span>.</span>
+            <span id="millisecs">000</span>
+        </p>
+        <section class="buttons">
+            <button class="button" id="startButton" onClick="startButton()">
+                start
+            </button>
+            <button class="button" id="stopButton" onClick="stopButton()">
+                stop
+            </button>
+            <button class="button" id="resetButton" onClick="resetButton()">
+                reset
+            </button>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
