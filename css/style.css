@@ -1,0 +1,142 @@
+:root {
+  --sm: 576px;
+  --md: 768px;
+  --lg: 1024px;
+
+  --box-shadow: rgba(207, 207, 207, 0.75);
+  /* colors */
+  --white: #fff;
+  --black: #000;
+  --light_salmon: #f89880;
+  ---salmon: #FA8072;
+  --congo_pink: #F88379;
+  --peach_orange: #fac898;
+  --blond: #FFF0BD;
+  --telemagenta: #D23369;
+  --iris: #4B56D2;
+  --zomp: #439A97;
+  --floralWhite: #FAF8F1;  
+}
+
+/* ============================== main css ============================== */
+body {
+  height: 100vh;
+  /* background: var(--light_salmon); */
+  /* background: var(--salmon); */
+  /* background: var(--congo_pink); */
+  /* background: var(--peach_orange); */
+  /* background-color: var(--blond); */
+  background-color: var(--floralWhite);
+  margin: 0;
+  display: flex;
+}
+
+body p {
+  margin: 0;
+}
+
+.stopWatch {
+  margin: auto;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 40px;
+}
+
+/* ============================== timmer css ============================== */
+.timer {
+  color: var(--black);
+  font-size: 100px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  margin-bottom: 40px;
+}
+
+#millisecs{
+  font-size: 70px;
+}
+
+/* ============================== buttons css ============================== */
+.buttons {
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.buttons .button {
+  font-size: 20px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--floralWhite);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 40px;
+  margin: 0px 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#startButton{
+    background-color: var(--zomp);
+    border: 2px solid var(--zomp);
+}
+
+#startButton:hover {
+  color: var(--zomp);
+  background-color: var(--floralWhite);
+  border: 2px solid var(--zomp);
+}
+
+#stopButton{
+    background-color: var(--telemagenta);
+    border: 2px solid var(--telemagenta);
+}
+
+#stopButton:hover {
+  color: var(--telemagenta);
+  background-color: var(--floralWhite);
+  border: 2px solid var(--telemagenta);
+}
+
+#resetButton{
+    background-color: var(--iris);
+    border: 2px solid var(--iris);
+}
+
+#resetButton:hover {
+  color: var(--iris);
+  background-color: var(--floralWhite);
+  border: 2px solid var(--iris);
+}
+
+/* ===================== (576px and down) ==========================*/
+@media only screen and (max-width: 576px) {
+  .timer {
+    font-size: 60px;
+  }
+  #millisecs{
+    font-size: 30px;
+  }
+  .buttons .button {
+    font-size: 16px;
+    padding: 8px 40px;
+    margin: 0px 8px;
+  }
+}
+
+/* ========================== (above 576px and below 768px) ========================*/
+@media only screen and (min-width: 576px) and (max-width: 786px) {
+  .timer {
+    font-size: 60px;
+  }
+  #millisecs{
+    font-size: 30px;
+  }
+  .buttons .button {
+    font-size: 16px;
+    padding: 8px 40px;
+    margin: 0px 8px;
+  }
+}
